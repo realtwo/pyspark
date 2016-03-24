@@ -71,9 +71,7 @@ def bfsReduce(data1, data2):
 
 def main():
 	print "Running bfs..."
-
-#	graphRdd = sc.textFile("Marvel-Graph.txt").map(parseInput)
-	graphRdd = sc.textFile("Test-Graph.txt").map(parseInput)
+	graphRdd = sc.textFile("graph.txt").map(parseInput)
 
 	for i in xrange(0, 10):
 		print '---------------------------'
