@@ -1,3 +1,14 @@
+#input data format:
+# id0	 id01, id02 ...
+# id1	 id11, id12 ...
+#...
+# first id (idn) is current node
+# following ids (idnm) are nodes connected to idn.
+
+# second degree: two nodes not directly connected
+# but through a third node that is connected to both.
+
+
 from pyspark import SparkConf, SparkContext
 import itertools
 
@@ -5,7 +16,7 @@ import itertools
 conf = SparkConf().setMaster("local").setAppName("FirstDegreeFriend")
 sc = SparkContext(conf = conf)
 
-inputRdd = sc.textFile("graph2.txt")
+inputRdd = sc.textFile("data_friend.txt")
 
 def genSecondDegreeFriend(line):
     v = line.split()

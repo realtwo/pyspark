@@ -1,3 +1,13 @@
+
+#input data format:
+# id0 id01 id02 ...
+# id1 id11 id12 ...
+#...
+# first id (idn) is current node
+# following ids (idnm) are nodes connected to idn.
+
+
+
 from pyspark import SparkConf, SparkContext
 
 conf = SparkConf().setMaster("local").setAppName("BFS")
@@ -71,7 +81,7 @@ def bfsReduce(data1, data2):
 
 def main():
 	print "Running bfs..."
-	graphRdd = sc.textFile("graph.txt").map(parseInput)
+	graphRdd = sc.textFile("data_bfs.txt").map(parseInput)
 
 	for i in xrange(0, 10):
 		print '---------------------------'
