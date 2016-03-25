@@ -8,5 +8,5 @@ find_second_degree_friends: fnid second degree friends
 
 TODO:
 apriori: spark version
-collab_filter: add item-item search, test for big data
+collab_filter: optimize for matrix, test for big data
 find_friends: test for big data 
