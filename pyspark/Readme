@@ -1,0 +1,12 @@
+List of files:
+
+bfs: breath first search
+apriori: find frequent itemsets
+collab_filter: collaborative filter for recommendation
+find_second_degree_friends: fnid second degree friends
+
+
+TODO:
+apriori: spark version
+collab_filter: add item-item search, test for big data
+find_friends: test for big data 
