@@ -3,10 +3,11 @@ List of files:
 bfs: breath first search
 apriori: find frequent itemsets
 collab_filter: collaborative filter for recommendation
-find_second_degree_friends: fnid second degree friends
-
+find_second_degree_friends: find second degree friends
+kmeans: k-means clustering
 
 TODO:
 apriori: spark version
 collab_filter: optimize for matrix, test for big data
 find_friends: test for big data 
+kmeans: test for big data
